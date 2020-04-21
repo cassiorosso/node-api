@@ -5,7 +5,7 @@ const Product = require('../models/product');
 exports.get = async() => {
     const res = await Product.find({
         'active': true
-    }, 'title price slug');
+    }, 'title price slug image description _id');
     return res;
 }
 

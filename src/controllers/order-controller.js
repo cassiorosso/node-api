@@ -25,14 +25,16 @@ exports.post = async (req, res, next) => {
             {
             customer: data.id,
             number: guid.raw().substring(0,6),
-            items: req.body.items
+            items: req.body.items,
+            shipPrice: req.body.shipPrice,
+            totalPrice: req.body.totalPrice
         });
         res.status(201).send({
             message: 'Pedido cadastrado com sucesso!'
         });
     } catch (e) {
         res.status(500).send({
-            message: 'Falha ao processar sua requisição'
+            message: e
         });
     }
 

@@ -22,6 +22,14 @@ const schema = new mongoose.Schema({
         enum: ['created', 'done'],
         default: 'created'
     },
+    shipPrice: {
+        type: Number,
+        required: true,
+    },
+    totalPrice:{
+        type: Number,
+        required: true,
+    },
     items: [{
         quantity: {
             type: Number,
