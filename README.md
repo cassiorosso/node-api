@@ -1,7 +1,7 @@
 
 API feita em NodeJs
 ========================
-Exemplo de Api de uma loja com cadastro de customers, products e orders ligadas ao MongoDB
+Exemplo de Api de uma loja com cadastro de customers, products e orders usando MongoDB como banco de dados.
 
 Features:
 
